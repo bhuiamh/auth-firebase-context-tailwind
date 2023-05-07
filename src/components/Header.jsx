@@ -47,10 +47,10 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
+                <Link to="/profile">Profile</Link>
+              </li>
+              <li>
+                <Link to="/orders">Orders</Link>
               </li>
               <li>
                 <a>Settings</a>
@@ -61,9 +61,9 @@ const Header = () => {
                     <Link>Sign out</Link>
                   </button>
                 ) : (
-                  <button>
+                  <p>
                     <Link to="/login">Sign In</Link>
-                  </button>
+                  </p>
                 )}
               </li>
             </ul>
